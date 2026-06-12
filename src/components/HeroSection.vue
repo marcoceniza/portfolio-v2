@@ -15,7 +15,7 @@ const { typedText } = storeToRefs(useCommonStore());
             <div>
                 <h2 class="text-sm font-mono tracking-widest text-brand uppercase mb-4">Marco Ceniza</h2>
                 <h1 class="text-6xl md:text-8xl font-display font-bold leading-tight mb-6">
-                    WEB <span class="text-gradient block">{{ typedText }} <span
+                    Frontend <span class="text-gradient block">{{ typedText }} <span
                             class="animate-[blink_0.5s_step-end_infinite_alternate]">|</span></span>
                 </h1>
                 <p class="text-lg text-gray-400 max-w-lg mb-8 leading-relaxed">
@@ -60,7 +60,7 @@ const { typedText } = storeToRefs(useCommonStore());
                         <div
                             class="absolute bottom-6 left-6 right-6 glass p-4 rounded-2xl translate-y-20 group-hover:translate-y-0 transition-transform duration-500">
                             <p class="text-white font-bold text-sm">Marco Ceniza</p>
-                            <p class="text-brand text-xs font-mono">Laravel & Vue Expert</p>
+                            <p class="text-brand text-xs font-mono">Frontend Developer</p>
                         </div>
                     </div>
                 </div>

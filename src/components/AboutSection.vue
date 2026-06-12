@@ -21,7 +21,7 @@ const commonStore = useCommonStore();
 									class="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-xl border border-white/20 mb-4">
 									<Code2 class="w-12 h-12 text-brand" />
 								</div>
-								<span class="font-display font-bold text-2xl tracking-tight">Full-Stack Dev</span>
+								<span class="font-display font-bold text-2xl tracking-tight">Frontend Dev</span>
 							</div>
 						</div>
 					</div>
