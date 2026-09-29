@@ -6,16 +6,16 @@ const commonStore = useCommonStore();
 </script>
 
 <template>
-	<section id="about" class="py-24 bg-card/30">
+	<section id="about" class="py-24 max-sm:py-16 bg-card/30">
 		<div class="max-w-7xl mx-auto px-6">
-			<div class="grid md:grid-cols-2 gap-16 items-center">
-				<div class="relative">
+			<div class="grid lg:grid-cols-2 gap-16 items-center">
+				<div class="relative max-lg:hidden">
 					<div class="aspect-square glass rounded-3xl p-8 flex items-center justify-center">
 						<div
 							class="relative w-full h-full bg-linear-to-br from-purple-600 to-indigo-800 rounded-2xl flex items-center justify-center overflow-hidden">
 							<div
 								class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,var(--tw-gradient-from)_0%,transparent_70%)]" />
-							<div class="text-white text-9xl font-bold opacity-10 select-none">VUE</div>
+							<div class="text-white text-9xl font-bold opacity-10 select-none max-xl:text-8xl">VUE</div>
 							<div class="relative z-10 flex flex-col items-center text-center">
 								<div
 									class="w-24 h-24 bg-white/10 rounded-full flex items-center justify-center backdrop-blur-xl border border-white/20 mb-4">
@@ -31,7 +31,7 @@ const commonStore = useCommonStore();
 					<h2 class="text-4xl font-display font-bold mb-6">
 						About <span class="text-brand">Me</span>
 					</h2>
-					<div class="space-y-6 text-gray-400 leading-relaxed">
+					<div class="max-sm:text-base space-y-6 text-gray-400 leading-relaxed">
 						<p>
 							I'm a Frontend Developer with experience building responsive and user-friendly web applications using HTML, CSS, JavaScript, Tailwind CSS, Vue.js, React, Next.js, and Laravel.
 						</p>
@@ -40,14 +40,14 @@ const commonStore = useCommonStore();
 						</p>
 					</div>
 
-					<div class="mt-8 grid grid-cols-2 gap-4">
+					<div class="mt-8 grid grid-cols-2 max-sm:grid-cols-1 gap-4">
 						<div class="flex items-center gap-3 text-sm">
 							<div class="w-10 h-10 rounded-full bg-brand/10 flex items-center justify-center text-brand">
 								<MapPin class="w-5 h-5" />
 							</div>
 							<div>
 								<p class="text-white font-medium">Location</p>
-								<p class="text-xs">Cebu City, Cebu</p>
+								<p class="text-xs">Cebu City, Philippines</p>
 							</div>
 						</div>
 						<div class="flex items-center gap-3 text-sm">
@@ -61,11 +61,11 @@ const commonStore = useCommonStore();
 						</div>
 					</div>
 
-					<button
-						class="mt-10 cursor-pointer flex items-center gap-2 px-6 py-3 bg-brand/10 text-brand font-bold rounded-lg hover:bg-brand hover:text-bg transition-all">
+					<a href="@/assets/MARCO_ANGELO_CENIZA_RESUME.pdf" download
+						class="mt-10 cursor-pointer w-[250px] max-w-full flex items-center max-sm:mx-auto max-sm:justify-center gap-2 px-6 py-3 bg-brand/10 text-brand font-bold rounded-lg hover:bg-brand hover:text-bg transition-all">
 						<Download class="w-5 h-5" />
 						DOWNLOAD RESUME
-					</button>
+					</a>
 				</div>
 			</div>
 

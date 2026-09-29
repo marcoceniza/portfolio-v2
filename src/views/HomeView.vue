@@ -35,11 +35,8 @@ onUnmounted(() => {
 
         <main>
             <HeroSection />
-
             <AboutSection />
-
             <WorksSection />
-
             <ContactSection />
         </main>
 

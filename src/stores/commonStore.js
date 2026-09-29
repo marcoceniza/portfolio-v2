@@ -4,11 +4,11 @@ import { Code2, Database, Layout, Server } from 'lucide-vue-next';
 
 export const useCommonStore = defineStore('common', () => {
     const NAV_LINKS = [
-        { name: 'Home', id: '#home' },
-        { name: 'About', id: '#about' },
-        { name: 'Works', id: '#works' },
-        { name: 'Resume', id: '#resume' },
-        { name: 'Contact', id: '#contact' },
+        { name: 'Home', id: '#home', href: '/' },
+        { name: 'About', id: '#about', href: '/#about' },
+        { name: 'Works', id: '#works', href: '/#works' },
+        { name: 'Resume', id: '#resume', href: '/#resume' },
+        { name: 'Contact', id: '#contact', href: '/#contact' },
     ]
 
     const PROJECTS = [
@@ -54,6 +54,7 @@ export const useCommonStore = defineStore('common', () => {
     }
 
     const scrollToSection = (sectionId) => {
+        console.log(`Scrolling to section: ${sectionId}`);
         const section = document.getElementById(sectionId);
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });

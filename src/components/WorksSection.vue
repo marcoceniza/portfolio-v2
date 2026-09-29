@@ -6,7 +6,7 @@ const commonStore = useCommonStore();
 </script>
 
 <template>
-    <section id="works" class="py-24">
+    <section id="works" class="py-24 max-sm:py-16">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-display font-bold mb-4">My <span class="text-brand">Works</span>

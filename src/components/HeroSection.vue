@@ -7,18 +7,18 @@ const { typedText } = storeToRefs(useCommonStore());
 </script>
 
 <template>
-    <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section id="home" class="relative min-h-screen max-md:min-h-auto flex items-center pt-24 pb-20 overflow-hidden">
         <div class="absolute top-1/4 -left-20 w-96 h-96 bg-brand/10 rounded-full blur-3xl" />
         <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
 
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+        <div class="max-w-7xl max-md:w-full mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
             <div>
                 <h2 class="text-sm font-mono tracking-widest text-brand uppercase mb-4">Marco Ceniza</h2>
-                <h1 class="text-6xl md:text-8xl font-display font-bold leading-tight mb-6">
+                <h1 class="text-5xl md:text-5xl lg:text-7xl xl:text-7xl font-display font-bold leading-tight mb-6">
                     Frontend <span class="text-gradient block">{{ typedText }} <span
                             class="animate-[blink_0.5s_step-end_infinite_alternate]">|</span></span>
                 </h1>
-                <p class="text-lg text-gray-400 max-w-lg mb-8 leading-relaxed">
+                <p class="text-lg max-sm:text-base text-gray-400 max-w-lg mb-8 leading-relaxed">
                     I'm a Frontend Developer passionate about building responsive and user-friendly web applications using
                     <span class="text-white font-medium">HTML</span>,
                     <span class="text-white font-medium">CSS</span>,
@@ -29,20 +29,20 @@ const { typedText } = storeToRefs(useCommonStore());
                     <span class="text-white font-medium">Next.js</span>, and
                     <span class="text-white font-medium">Laravel</span>.
                 </p>
-                <div class="flex flex-wrap gap-4">
+                <div class="flex flex-wrap max-sm:justify-center gap-4">
                     <a href="#contact"
-                        class="px-8 py-4 bg-brand text-bg font-bold rounded-lg hover:bg-brand-dark transition-all transform hover:-translate-y-1">
+                        class="px-8 max-lg:px-6 max-sm:px-4 max-sm:py-3 py-4 bg-brand text-bg font-bold rounded-lg hover:bg-brand-dark transition-all transform hover:-translate-y-1">
                         CONTACT ME
                     </a>
                     <a href="#works"
-                        class="px-8 py-4 border border-border text-white font-bold rounded-lg hover:bg-white/5 transition-all transform hover:-translate-y-1">
+                        class="px-8 max-lg:px-6 max-sm:px-4 max-sm:py-3 py-4 border border-border text-white font-bold rounded-lg hover:bg-white/5 transition-all transform hover:-translate-y-1">
                         VIEW WORKS
                     </a>
                 </div>
             </div>
 
-            <div class="relative flex justify-center">
-                <div class="relative w-72 h-72 md:w-96 md:h-96 group">
+            <div class="relative flex justify-center max-sm:hidden sm:hidden md:flex">
+                <div class="relative w-72 h-72 md:w-70 md:h-70 lg:w-96 lg:h-96 group">
                     <!-- Rotated Square Background -->
                     <div
                         class="absolute inset-0 bg-brand/20 rotate-12 rounded-3xl group-hover:rotate-6 transition-transform duration-700" />

@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from 'lucide-vue-next';
 </script>
 
 <template>
-	<section id="contact" class="py-24 bg-card/30">
+	<section id="contact" class="py-24 max-sm:py-16 bg-card/30">
 		<div class="max-w-7xl mx-auto px-6">
 			<div class="grid lg:grid-cols-2 gap-16">
 				<div>

@@ -19,7 +19,7 @@ const { isScrolled, mobileMenuOpen } = storeToRefs(commonStore);
 
             <!-- Desktop Menu -->
             <div class="hidden md:flex gap-8">
-                <a v-for="link in commonStore.NAV_LINKS" :key="link.name" @click="commonStore.scrollToSection(link.id)"
+                <a v-for="link in commonStore.NAV_LINKS" :href="link.href" :key="link.name" @click="commonStore.scrollToSection(link.id)"
                     class="text-sm font-medium hover:text-brand transition-colors">
                     {{ link.name }}
                 </a>
