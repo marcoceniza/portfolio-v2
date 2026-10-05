@@ -39,6 +39,7 @@ const commonStore = useCommonStore();
                             {{ project.description }}
                         </p>
                         <a :href="project.link"
+                            target="_blank"
                             class="inline-flex items-center gap-2 text-sm font-bold text-white hover:text-brand transition-colors">
                             VIEW PROJECT
                             <ChevronRight class="w-4 h-4" />

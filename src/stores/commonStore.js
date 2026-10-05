@@ -1,6 +1,7 @@
 import { ref } from 'vue'
 import { defineStore } from 'pinia'
 import { Code2, Database, Layout, Server } from 'lucide-vue-next';
+import todoImg from '@/assets/todo_img.png'
 
 export const useCommonStore = defineStore('common', () => {
     const NAV_LINKS = [
@@ -14,10 +15,10 @@ export const useCommonStore = defineStore('common', () => {
     const PROJECTS = [
         {
             title: 'Todo Application',
-            description: 'A robust task management system built with Laravel and Vue.js, featuring real-time updates and categorization.',
-            image: 'https://picsum.photos/seed/todo/800/600',
-            tags: ['Laravel', 'Vue.js', 'MySQL'],
-            link: '#'
+            description: 'A robust task management system built with Vue.js, Typescript, and Tailwind CSS, featuring real-time updates and offline support.',
+            image: todoImg,
+            tags: ['Vue.js', 'Typescript', 'Tailwind'],
+            link: 'https://mc-dev.site/todo'
         },
         {
             title: 'Image Upload System',
